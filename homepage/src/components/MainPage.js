@@ -10,11 +10,11 @@ const MainPage = () => {
             <span>(24세)</span><br />
             <span>Email#1: wltkdwns0220@naver.com</span><br />
             <span>Email#2: wltkdwns0220@konkuk.ac.kr</span><br />
-            [<a href="/assets/[지상준]CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>]
+            [<a href={`${process.env.PUBLIC_URL}/assets/[지상준]CV.pdf`} target="_blank" rel="noopener noreferrer">CV</a>]
             [<a href="https://github.com/Approxy02">GitHub</a>]
           </div>
         </div>
-        <img src="/assets/Sang-Jun_Ji.jpg" alt="profile" />
+        <img src={`${process.env.PUBLIC_URL}/assets/Sang-Jun_Ji.jpg`} alt="profile" />
       </div>
       <hr />
       <div id="biography">
@@ -25,7 +25,7 @@ const MainPage = () => {
           </p>
         </blockquote>
         <p>
-          Hello! I am currently an undergraduate student in the <a href="https://cse.konkuk.ac.kr/cse/index.do">Department of Computer Science and Engineering at Konkuk University</a>. 
+          Hello! I am currently an undergraduate student in the <a href="https://cse.konkuk.ac.kr/cse/index.do">Department of Computer Science and Engineering at Konkuk University</a>.
           I am also working as an undergraduate intern at <a href="https://gli.konkuk.ac.kr/">Graph & Language Intelligence Lab.</a>, advised by Prof. <a href="https://bkoh509.github.io/">Byungkook Oh</a>.
         </p>
         <p style={{ margin: 0 }}>
