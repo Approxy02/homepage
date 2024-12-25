@@ -10,11 +10,11 @@ const MainPage = () => {
             <span>(24세)</span><br />
             <span>Email#1: wltkdwns0220@naver.com</span><br />
             <span>Email#2: wltkdwns0220@konkuk.ac.kr</span><br />
-            [<a href="../assets/[지상준]CV.pdf">CV</a>]
+            [<a href="/assets/[지상준]CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>]
             [<a href="https://github.com/Approxy02">GitHub</a>]
           </div>
         </div>
-        <img src="./assets/Sang-Jun_Ji.jpg" alt="profile" />
+        <img src="/assets/Sang-Jun_Ji.jpg" alt="profile" />
       </div>
       <hr />
       <div id="biography">
