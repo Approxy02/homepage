@@ -7,14 +7,14 @@ const MainPage = () => {
         <div id="header-info">
           <div>
             <h1>Sang-Jun Ji (지상준)</h1>
-            <span>개백수(24세)</span><br />
+            <span>(24세)</span><br />
             <span>Email#1: wltkdwns0220@naver.com</span><br />
             <span>Email#2: wltkdwns0220@konkuk.ac.kr</span><br />
             [<a href="../assets/[지상준]CV.pdf">CV</a>]
             [<a href="https://github.com/Approxy02">GitHub</a>]
           </div>
         </div>
-        <img src="/assets/Sang-Jun_Ji.jpg" alt="profile" />
+        <img src="%PUBLIC_URL%/assets/Sang-Jun_Ji.jpg" alt="profile" />
       </div>
       <hr />
       <div id="biography">
