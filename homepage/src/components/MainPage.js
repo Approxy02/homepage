@@ -14,7 +14,7 @@ const MainPage = () => {
             [<a href="https://github.com/Approxy02">GitHub</a>]
           </div>
         </div>
-        <img src="%PUBLIC_URL%/assets/Sang-Jun_Ji.jpg" alt="profile" />
+        <img src="./assets/Sang-Jun_Ji.jpg" alt="profile" />
       </div>
       <hr />
       <div id="biography">
