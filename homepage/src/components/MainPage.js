@@ -1,45 +1,133 @@
 import React from 'react';
 
 const MainPage = () => {
+  const publicUrl = process.env.PUBLIC_URL || '';
+
   return (
-    <>
-      {/* 메인 콘텐츠 */}
-      <div id="header" className="content">
-        <div id="profile">
-          <div id="header-info">
-            <div>
-              <h1>Sang-Jun Ji (지상준)</h1>
-              <span>Bachelor Student</span><br />
-              <span>Email#1: wltkdwns0220@naver.com</span><br />
-              <span>Email#2: wltkdwns0220@konkuk.ac.kr</span><br />
-              [<a href={`${process.env.PUBLIC_URL}/assets/[지상준]CV.pdf`} target="_blank" rel="noopener noreferrer">CV</a>]
-              [<a href="https://github.com/Approxy02">GitHub</a>]
-            </div>
-          </div>
-          <img src={`${process.env.PUBLIC_URL}/assets/Sang-Jun_Ji.jpg`} alt="profile" />
-        </div>
-        <hr />
-        <div id="biography">
-          {/* <blockquote style={{ marginLeft: "auto", marginRight: "auto" }}>
-          <p className="quote">
-            <em>I pursue AI that thinks similar to humans based on <a href="https://www.youtube.com/watch?v=y7sXDpffzQQ&ab_channel=IBMTechnology">knowledge</a><br />
-              because it is vital to the future of AGI.</em>
-          </p>
-        </blockquote> */}
+    <main className="page">
+      <section className="intro">
+        <div className="intro-text">
+          <h1 className="name">Sang-Jun Ji</h1>
+          <p className="role">Bachelor Student</p>
           <p>
-            Hello! I am currently an undergraduate student in the <a href="https://cse.konkuk.ac.kr/cse/index.do">Department of Computer Science and Engineering</a> at Konkuk University.
-            I am also working as an undergraduate intern at <a href="https://gli.konkuk.ac.kr/">Graph & Language Intelligence Lab.</a>, advised by Prof. <a href="https://bkoh509.github.io/">Byungkook Oh</a>.
+            Hello! I am currently an undergraduate student in the{' '}
+            <a href="https://cse.konkuk.ac.kr/cse/index.do">
+              Department of Computer Science and Engineering
+            </a>{' '}
+            at Konkuk University. 
+            <br />
+            I am also working as an undergraduate research intern at{' '}
+            <a href="https://gli.konkuk.ac.kr/">Graph &amp; Language Intelligence Lab</a>, advised by Prof.{` `}
+            <a href="https://bkoh509.github.io/">Byungkook Oh</a>.
           </p>
-          {/* <p style={{ margin: 0 }}>
-          My research interest is highly related to <em><b>Human-like Artificial Intelligence</b></em>, including
-          knowledge representation (e.g., knowledge graph embedding and graph embedding) and knowledge-based
-          applications (e.g., Knowledge-enhanced NLP Applications, Information Retrieval & Recommendation). I have
-          covered a wide range of data types (e.g., matrix/tensor, text, graph, time series) for various tasks (e.g.,
-          classification, prediction, retrieval, data generation).
-        </p> */}
+          <p className="links">
+            <a href="mailto:wltkdwns0220@naver.com">Email</a>
+            <span className="link-sep">/</span>
+            <a
+              href={`${publicUrl}/assets/[지상준]_CV_2026_01_01.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CV
+            </a>
+            <span className="link-sep">/</span>
+            <a href="https://github.com/Approxy02">GitHub</a>
+            <span className="link-sep">/</span>
+            <a href="https://uncovered-tarp-237.notion.site/sangjunji">Portfolio</a>
+          </p>
         </div>
-      </div>
-    </>
+        <div className="intro-photo">
+          <img src={`${publicUrl}/images/Sang-Jun_Ji.jpg`} alt="Sang-Jun Ji" />
+        </div>
+      </section>
+
+      <section className="section">
+        <h2>Research Interests</h2>
+        <ul className="list">
+          <li>Graph ML/DL</li>
+          <li>(Hyper)Graph Representation Learning</li>
+          <li>Synergizing LLMs and Graphs</li>
+        </ul>
+      </section>
+
+      <section className="section">
+        <h2>Education</h2>
+        <div className="item">
+          <div className="item-media" aria-hidden="true">
+            <img src={`${publicUrl}/images/Konkuk_University.png`} alt="Konkuk University Logo" />
+          </div>
+          <div className="item-body">
+            <strong>
+              B.S. in Computer Science and Engineering
+            </strong>
+            <br />
+            Konkuk University, Seoul, South Korea
+            <br />
+            Mar. 2020 ~ Present (Expected graduation: Feb. 2027)
+            <br />
+            GPA: 4.33 / 4.5, Major GPA: 4.47 / 4.5
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <h2>Experience</h2>
+        <div className="item">
+          <div className="item-media" aria-hidden="true">
+            <img src={`${publicUrl}/images/GLI_Lab.png`} alt="GLI Lab Logo" />
+          </div>
+          <div className="item-body">
+            <strong>Undergraduate Research Intern</strong>
+            <br />
+            <a href="https://gli.konkuk.ac.kr/">Graph &amp; Language Intelligence Lab</a>, Konkuk University
+            <br />
+            Jul. 2024 ~ Present
+            <br />
+            <br />
+            Advisor: Prof. Byungkook Oh
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <h2>Publications</h2>
+        <div className="pub">
+          <span className="pub-title">
+            Disentangled Global-Local Representations via Relation-Entity Pair Encoding for Hyper-Relational KGs
+          </span>
+          <br />
+            <span className="name-highlight">Sang-Jun Ji</span>, Sang-June Kim, Bonyou Koo, Young-Ho Lee, Xiongnan Jin, and Byungkook Oh*
+          <br />
+          <em>Under Review</em>
+        </div>
+      </section>
+
+      <section className="section">
+        <h2>Patents</h2>
+        <div className="pub">
+          <span className="pub-title">
+            하이퍼관계형 지식 그래프 상의 하이퍼관계형 사실에 대한 링크 예측 방법 및 장치 
+          </span>
+          <br />
+          (Method and Apparatus for Link Prediction of Hyper-Relational Facts on Hyper-Relational Knowledge Graphs)
+          <br />
+          <span className="name-highlight">Sang-Jun Ji</span>, Byungkook Oh
+          <br />
+          KR Patent, 출원번호 10-2025-0198284, 출원일 2025년 12월 12일
+        </div>
+      </section>
+
+      <section className="section">
+        <h2>Awards</h2>
+        <div className="pub">
+          <span className="pub-title">
+            카카오x한국정보과학회 AI 에이전트 경진대회
+          </span>
+          <br />
+          Award of Excellence (우수상), 2025
+        </div>
+      </section>
+    </main>
   );
 };
 

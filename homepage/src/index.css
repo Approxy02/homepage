@@ -1,447 +1,227 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+KR:wght@300;500;700&display=swap');
 
 :root {
-  --main-tooltip-display: none;
+  --text-color: #111;
+  --muted-color: #444;
+  --link-color: #1772d0;
+  --link-hover: #f09228;
+  --max-width: 800px;
+  --section-gap: 36px;
 }
 
-/* 800px 이하인 경우 (아이폰), 좀 더 잘보이도록 확대 */
-@media screen and (max-device-width: 800px) {
-
-  html,
-  body {
-    font-size: 25px;
-  }
-
-  h1 {
-    font-size: 1.3em;
-  }
-
-  h2 {
-    font-size: 1.1em;
-  }
-
-  #profile {
-    max-height: 240px;
-  }
-
-  #header-info {
-    height: 240px;
-  }
-
-  #header img {
-    height: 200px;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 html,
 body {
-  padding: 0;
   margin: 0;
-  color: #333;
-  background: #f7f7f7;
-
-  font-family: 'Noto Sans KR', 'Roboto', Helvetica, Arial, sans-serif;
-  font-size: 17px;
-  /* recommended */
-  font-weight: 300;
-
-  @media screen and (max-device-width: 800px) {
-    font-size: 25px;
-  }
-
-  /* ⭐핵심⭐ */
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-}
-
-.content {
-  max-width: 850px;
-  background-color: #fff;
-  padding: 30px;
-  border-top: 15px solid #02783f;
-  border-bottom: 15px solid #02783f;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin: 20px auto;
-}
-
-#header.content {
-  margin-top: 30px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-#main.content {
-  font-size: 0.95em;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #222;
-  margin: 0 0 20px !important;
-  display: flex;
-  font-weight: 700;
-  ;
-}
-
-h1 {
-  font-size: 1.5em;
-  color: #393939;
-  margin: 0 0 20px;
-  line-height: 1.1;
-
-  /* 800px 이하인 경우 (아이폰), 좀 더 잘보이도록 확대 */
-  @media screen and (max-device-width: 800px) {
-    font-size: 1.3em;
-  }
-}
-
-h2 {
-  color: #494949;
-  position: relative;
-  line-height: 1.1;
-  font-size: 1.17em;
-
-  /* 800px 이하인 경우 (아이폰), 좀 더 잘보이도록 확대 */
-  @media screen and (max-device-width: 800px) {
-    font-size: 1.1em;
-  }
-}
-
-h2:after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 70px;
-  height: 1px;
-  background-color: #02783f;
-  display: block;
-}
-
-h3,
-h4,
-h5,
-h6 {
-  color: #494949;
-  margin: 0 0 10px;
-}
-
-p,
-table,
-pre,
-dl {
-  margin: 0 0 20px;
-  /*margin: 0;*/
+  padding: 0;
+  background: #fff;
+  color: var(--text-color);
+  font-family: 'Lato', 'Noto Sans KR', 'Apple SD Gothic Neo', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 a {
-  color: rgb(29, 119, 66);
+  color: var(--link-color);
   text-decoration: none;
 }
 
+a:focus,
 a:hover {
-  color: #0f8042;
-  text-decoration: underline;
+  color: var(--link-hover);
+  text-decoration: none;
 }
 
-b {
-  font-weight: 500;
+p {
+  margin: 0 0 16px;
 }
 
-.sparse-list {
-  padding-bottom: 15px;
+strong {
+  font-weight: 700;
 }
 
-.sparse-list:last-child {
-  padding-bottom: 0;
+img {
+  max-width: 100%;
 }
 
-.small {
-  margin-top: -50px;
-  font-size: 0.8em;
-}
-
-.footnotes {
-  font-size: 0.8em;
-  text-align: center;
+.page {
+  max-width: var(--max-width);
   margin: 0 auto;
-  max-width: 900px;
-  /*padding: 30px;*/
-  margin-bottom: 20px;
+  padding: 40px 24px 64px;
 }
 
-/* ==================== HEADER ==================== */
-#profile {
-  display: flex;
+.intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  gap: 32px;
   align-items: center;
-  flex-direction: row;
-  /*가로 배치*/
-  /*flex-wrap: nowrap;*/
-  /*내용물이 안 넘어 가도록*/
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  overflow: hidden;
-  /* 내용물이 넘어갈 때 다른 div안에 숨겨지도록 */
-  max-height: 210px;
-
-  /* height를 고정해야 내용물이 넘어갈때 #profile이 같이 안 커짐 */
-  /*800px 이하인 경우 (아이폰), 좀 더 잘보이도록 확대*/
-  @media screen and (max-device-width: 800px) {
-    max-height: 240px;
-  }
 }
 
-#header-info {
-  /*flex-grow: 0;  !* 팽창지수: 여분의 free space가 있어도 폭이 저절로 늘어남 *!*/
-  /*flex-shrink: 0; !* 수축지수 *!*/
-  /*flex-basis: auto; !* 기준 사이즈 *!*/
-
-  display: flex;
-  align-items: center;
-  height: 210px;
-  width: auto;
-
-  /*800px 이하인 경우 (아이폰), 좀 더 잘보이도록 확대*/
-  @media screen and (max-device-width: 800px) {
-    height: 240px;
-  }
-}
-
-#header img {
-  /*flex-grow: 0;*/
-  /*flex-shrink: 1;*/
-  /*flex-basis: 0; !* 기준 사이즈 *!*/
-
-  width: auto;
-  height: 180px;
-  margin: 15px;
-  float: right;
-
-  /* 800px 이하인 경우 (아이폰), 좀 더 잘보이도록 확대 */
-  @media screen and (max-device-width: 800px) {
-    height: 200px;
-  }
-}
-
-#header #biography {
-  font-size: 0.95em;
-}
-
-.quote {
-  font-size: 1em;
-  font-weight: 500;
+.name {
+  margin: 0 0 8px;
+  font-size: 32px;
+  font-weight: 700;
   text-align: center;
-  padding: 10px 10px;
 }
 
-.quote::before {
-  content: open-quote;
-  display: inline;
-  height: 0;
-  line-height: 0;
-  left: 0;
-  position: relative;
-  top: 15px;
-  color: #ccc;
-  font-size: 2.5em;
+.role {
+  margin: 0 0 18px;
+  text-align: center;
+  color: var(--muted-color);
 }
 
-.quote::after {
-  content: close-quote;
-  display: inline;
-  height: 0;
-  line-height: 0;
-  left: 0;
-  position: relative;
-  top: 20px;
-  color: #ccc;
-  font-size: 2.5em;
+.links {
+  margin: 16px 0 0;
+  text-align: center;
 }
 
-/* ================================================= */
-
-
-/* ==================== TOGGLE ==================== */
-#toggle-wrapper {
-  /*display: flex;*/
-  /*align-items: center;*/
-  /*justify-content: center;*/
-  float: right;
-  font-size: 0.9em;
-  z-index: 99;
+.link-sep {
+  margin: 0 8px;
+  color: #888;
 }
 
-#toggle-wrapper span {
-  position: relative;
-  margin-right: 5px;
-  top: -7px;
-}
-
-/* Hide the checkbox input */
-#toggle {
-  display: none;
-}
-
-/* Toggle button style */
-.toggle-label {
-  cursor: pointer;
-  display: inline-block;
-  width: 50px;
-  height: 25px;
-  background-color: #ccc;
-  border-radius: 30px;
-  position: relative;
-  transition: background-color 0.3s;
-}
-
-/* Toggle button circle */
-.toggle-label::before {
-  content: "";
-  position: absolute;
-  left: 2px;
-  top: 2px;
-  width: 21px;
-  height: 21px;
-  background-color: white;
+.intro-photo img {
+  width: 100%;
+  max-width: 200px;
+  aspect-ratio: 3 / 4;
   border-radius: 50%;
-  transition: left 0.3s;
-}
-
-/* When the checkbox is checked, adjust the style */
-#toggle:checked+.toggle-label {
-  background-color: #035384;
-}
-
-#toggle:checked+.toggle-label::before {
-  left: 27px;
-}
-
-/* ================================================ */
-
-
-/* ==================== TOOLTIP ==================== */
-/* ToolTip (currently not use): https://blog.logrocket.com/creating-beautiful-tooltips-with-only-css/ */
-/* CSS data-content attribute escapes backslashes */
-/* https://stackoverflow.com/questions/31011660/css-data-content-attribute-escapes-backslashes*/
-/* Current version is GPT-4 */
-.tooltip {
-  position: relative;
-  /* making the .tooltip span a container for the tooltip text */
-  border-bottom: 1px dashed #000;
-  /* little indicater to indicate it's hoverable */
-  /*width: max-content;*/
-  cursor: help;
-}
-
-.tooltip-hover {
-  position: absolute;
-  /* 다른 element와 겹쳐지도록 */
-  z-index: 2;
-  /* 맨 위로 */
-  padding-top: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-  display: none;
-}
-
-.tooltip-content {
-  font-size: 0.9em;
-  /*width: max-content;*/
-  /*화면 밖으로 나가는 경우가 발생함*/
-  max-width: 780px;
-  padding: 10px 15px;
-  border-radius: 10px;
-  background: #505050;
-  color: #fff;
-  /*!*vertically center*!*/
-  /*top: 50%;*/
-  /*transform: translateY(-50%);*/
-}
-
-/* 터치폰에서는 hover가 작동 안 하도록 */
-/*@media(hover: hover) and (pointer: fine) {*/
-/*}*/
-
-/* 툴팁이 hover될 때, tooltip-hover 요소는 다음과 같은 속성을 가짐 */
-.tooltip:hover~.tooltip-hover {
-  /* '+' means sibiling */
-  /* '~' means more flexible sibiling */
-  /* sibiling 형태로 작성해야 description 드래그 여부를 결정할 수 있음 */
+  object-fit: cover;
   display: block;
-  cursor: help;
+  margin: 0 auto;
+  pointer-events: none;
 }
 
-.tooltip-hover:hover {
-  /*display: block;  !* block의 경우에는 description이 드래그 가능해짐 *!*/
-  display: var(--main-tooltip-display);
-  cursor: help;
+.section {
+  margin-top: var(--section-gap);
 }
 
-/* ================================================= */
-
-
-/* ==================== SNACKBAR =================== */
-#snackbar {
-  display: none;
-  min-width: 50px;
-  margin-left: -25px;
-  /* width 절반 */
-  background-color: #505050;
-  color: #fff;
-  text-align: center;
-  border-radius: 5px;
-  padding: 8px 16px;
-  position: fixed;
-  z-index: 10;
-  left: 50%;
-  bottom: 30px;
-  font-size: 0.95em;
+.section h2 {
+  margin: 0 0 12px;
+  font-size: 25px;
+  font-weight: 400;
 }
 
-#snackbar.show {
+.section p:last-child {
+  margin-bottom: 0;
+}
+
+.list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.list li {
+  margin-bottom: 6px;
+}
+
+.list li:last-child {
+  margin-bottom: 0;
+}
+
+.list.compact {
+  margin-top: 8px;
+}
+
+.list.compact li {
+  margin-bottom: 4px;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 28px;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.item-media {
+  width: 160px;
+  height: 160px;
+  border-radius: 18px;
+  background: transparent;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  color: #666;
+  letter-spacing: 0.08em;
+  overflow: hidden;
+  padding: 8px;
+}
+
+.item-media img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
   display: block;
-  animation: fadein 0.5s, fadeout 0.5s 1.0s;
 }
 
-@keyframes fadein {
-  from {
-    bottom: 30px;
-    opacity: 0;
-  }
-
-  to {
-    bottom: 30px;
-    opacity: 1;
-  }
+.item-body {
+  font-size: inherit;
 }
 
-@keyframes fadeout {
-  from {
-    bottom: 30px;
-    opacity: 1;
-  }
-
-  to {
-    bottom: 30px;
-    opacity: 0;
-  }
+.pub {
+  font-size: inherit;
+  line-height: 1.6;
 }
 
-#myBtn {
-  display: none;
-  font-size: 2rem;
-  position: fixed;
-  bottom: 5%;
-  right: 5%;
-  z-index: 99;
-  cursor: pointer;
-  color: #035384;
+.pub + .pub {
+  margin-top: 12px;
 }
 
-/* ================================================= */
+.pub-title {
+  font-weight: 700;
+}
+
+.name-highlight {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  font-weight: 700;
+}
+
+.empty {
+  margin: 0;
+  color: #777;
+  font-size: inherit;
+}
+
+@media (max-width: 800px) {
+  body {
+    font-size: 18px;
+  }
+
+  .page {
+    padding: 28px 20px 48px;
+  }
+
+  .intro {
+    grid-template-columns: minmax(0, 1fr) 140px;
+  }
+
+  .name,
+  .role,
+  .links {
+    text-align: left;
+  }
+
+  .intro-photo img {
+    max-width: 130px;
+  }
+
+  .item {
+    grid-template-columns: 160px 1fr;
+  }
+
+  .item-media {
+    width: 160px;
+    height: 160px;
+    border-radius: 16px;
+  }
+}
