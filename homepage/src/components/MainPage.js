@@ -24,7 +24,7 @@ const MainPage = () => {
             <a href="mailto:wltkdwns0220@naver.com">Email</a>
             <span className="link-sep">/</span>
             <a
-              href={`${publicUrl}/assets/[지상준]_CV_2026_01_06.pdf`}
+              href={`${publicUrl}/assets/[지상준]_CV_(v260114).pdf`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -98,7 +98,7 @@ const MainPage = () => {
           <br />
             <span className="name-highlight">Sang-Jun Ji</span>, Sang-June Kim, Bonyou Koo, Young-Ho Lee, Xiongnan Jin, and Byungkook Oh*
           <br />
-          <em>Under Review</em>
+          <em>Preprint</em>
         </div>
       </section>
 
