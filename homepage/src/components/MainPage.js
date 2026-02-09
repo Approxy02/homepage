@@ -7,7 +7,7 @@ const MainPage = () => {
     <main className="page">
       <section className="intro">
         <div className="intro-text">
-          <h1 className="name">Sang-Jun Ji</h1>
+          <h1 className="name">Sangjun Ji</h1>
           <p className="role">Bachelor Student</p>
           <p>
             Hello! I am currently an undergraduate student in the{' '}
@@ -37,7 +37,7 @@ const MainPage = () => {
           </p>
         </div>
         <div className="intro-photo">
-          <img src={`${publicUrl}/images/Sang-Jun_Ji.jpg`} alt="Sang-Jun Ji" />
+          <img src={`${publicUrl}/images/Sangjun_Ji.jpg`} alt="Sangjun Ji" />
         </div>
       </section>
 
@@ -65,7 +65,7 @@ const MainPage = () => {
             <br />
             Mar. 2020 ~ Present (Expected graduation: Feb. 2027)
             <br />
-            GPA: 4.33 / 4.5, Major GPA: 4.47 / 4.5
+            GPA: 4.28 / 4.5, Major GPA: 4.36 / 4.5
           </div>
         </div>
       </section>
@@ -96,9 +96,9 @@ const MainPage = () => {
             Disentangled Global-Local Representations via Relation-Entity Pair Encoding for Hyper-Relational KGs
           </span>
           <br />
-            <span className="name-highlight">Sang-Jun Ji</span>, Sang-June Kim, Bonyou Koo, Young-Ho Lee, Xiongnan Jin, and Byungkook Oh*
+            <span className="name-highlight">Sangjun Ji</span>, Sangjune Kim, Bonyou Koo, Youngho Lee, Xiongnan Jin, and Byungkook Oh*
           <br />
-          <em>Preprint</em>
+          <em>Under Review</em>
         </div>
       </section>
 
@@ -111,7 +111,7 @@ const MainPage = () => {
           <br />
           (Method and Apparatus for Link Prediction of Hyper-Relational Facts on Hyper-Relational Knowledge Graphs)
           <br />
-          <span className="name-highlight">Sang-Jun Ji</span>, Byungkook Oh
+          <span className="name-highlight">Sangjun Ji</span>, Byungkook Oh
           <br />
           KR Patent, 출원번호 10-2025-0198284, 출원일 2025년 12월 12일
         </div>
