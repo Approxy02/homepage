@@ -24,7 +24,7 @@ const MainPage = () => {
             <a href="mailto:wltkdwns0220@naver.com">Email</a>
             <span className="link-sep">/</span>
             <a
-              href={`${publicUrl}/assets/[지상준]_CV_(v260212).pdf`}
+              href={`${publicUrl}/assets/[지상준]_CV).pdf`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -44,8 +44,8 @@ const MainPage = () => {
       <section className="section">
         <h2>Research Interests</h2>
         <ul className="list">
-          <li>Graph ML/DL</li>
-          <li>(Hyper)Graph Representation Learning</li>
+          <li>Structured Reasoning in LLMs</li>
+          <li>Knowledge-Grounded Reasoning</li>
           <li>Synergizing LLMs and Graphs</li>
         </ul>
       </section>
