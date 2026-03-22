@@ -127,6 +127,43 @@ const MainPage = () => {
           Award of Excellence (우수상), 2025
         </div>
       </section>
+
+      <section className="section">
+        <h2>Projects</h2>
+        <div className="pub">
+          <span className="pub-title">
+            Multi-Agentic Graph RAG for Fair Meet-up Location Recommendation and Schedule Coordination
+          </span>
+          <br />
+          <em>GLI Lab., Oct. 2025 - Dec. 2025</em>
+        </div>
+        <div className="pub">
+          <span className="pub-title">
+            GraphRAG with User-Item Interactions for Recommendation
+          </span>
+          <br />
+          <em>GLI Lab., Mar. 2025 - May. 2025</em>
+        </div>
+          <div className="pub">
+          <span className="pub-title">
+            Pzzk: A Clean, Serverless iOS Calendar          
+          </span>
+          <br />
+          <em>Team Lett., Jan. 2024 - Feb. 2024</em>
+        </div>
+      </section>
+
+      <section className="section">
+        <h2>Licenses & Certifications</h2>
+        <div className="pub">
+          <span className="pub-title">
+            Craftsman Fork Lift Truck Operator (지게차운전기능사)
+          </span>
+          <br />
+          Dec. 2022
+        </div>
+      </section>
+
     </main>
   );
 };
