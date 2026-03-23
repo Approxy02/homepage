@@ -24,7 +24,7 @@ const MainPage = () => {
             <a href="mailto:wltkdwns0220@naver.com">Email</a>
             <span className="link-sep">/</span>
             <a
-              href={`${publicUrl}/assets/[지상준]_CV).pdf`}
+              href={`${publicUrl}/assets/[지상준]_CV.pdf`}
               target="_blank"
               rel="noopener noreferrer"
             >
