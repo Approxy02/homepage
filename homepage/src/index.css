@@ -3,8 +3,8 @@
 :root {
   --text-color: #111;
   --muted-color: #444;
-  --link-color: #1772d0;
-  --link-hover: #f09228;
+  --link-color: #003973cf;
+  --link-hover: #ff8800d7;
   --max-width: 800px;
   --section-gap: 36px;
 }
@@ -131,17 +131,21 @@ img {
   margin-bottom: 4px;
 }
 
+.section-indented > :not(h2) {
+  margin-left: 28px;
+}
+
 .item {
   display: grid;
-  grid-template-columns: 160px 1fr;
+  grid-template-columns: 130px 1fr;
   gap: 28px;
   align-items: center;
   padding: 12px 0;
 }
 
 .item-media {
-  width: 160px;
-  height: 160px;
+  width: 130px;
+  height: 130px;
   border-radius: 18px;
   background: transparent;
   display: grid;
@@ -175,11 +179,65 @@ img {
   margin-top: 12px;
 }
 
+.pub-numbered {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  column-gap: 8px;
+  align-items: start;
+}
+
+.pub-index {
+  font-weight: 700;
+}
+
+.pub-content {
+  min-width: 0;
+}
+
+.pub-single-line {
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  font-size: clamp(8px, 1.7vw, 1em);
+}
+
 .pub-title {
   font-weight: 700;
 }
 
+.proof-toggle {
+  display: inline-block;
+}
+
+.proof-toggle summary {
+  cursor: pointer;
+}
+
+.proof-toggle summary:hover {
+  color: var(--muted-color);
+}
+
+.related-note {
+  color: var(--muted-color);
+}
+
+.proof-content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 4px;
+  color: var(--muted-color);
+}
+
+.proof-content img {
+  display: block;
+  width: 100%;
+  height: 360px;
+  object-fit: contain;
+}
+
 .name-highlight {
+  color: #00000097;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
@@ -216,12 +274,24 @@ img {
   }
 
   .item {
-    grid-template-columns: 160px 1fr;
+    grid-template-columns: 130px 1fr;
   }
 
   .item-media {
-    width: 160px;
-    height: 160px;
+    width: 130px;
+    height: 130px;
     border-radius: 16px;
+  }
+
+  .section-indented > :not(h2) {
+    margin-left: 16px;
+  }
+
+  .proof-content {
+    grid-template-columns: 1fr;
+  }
+
+  .proof-content img {
+    height: auto;
   }
 }

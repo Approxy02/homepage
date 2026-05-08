@@ -8,7 +8,7 @@ const MainPage = () => {
       <section className="intro">
         <div className="intro-text">
           <h1 className="name">Sangjun Ji</h1>
-          <p className="role">Bachelor Student</p>
+          <p className="role">Undergrad student</p>
           <p>
             Hello! I am currently an undergraduate student in the{' '}
             <a href="https://cse.konkuk.ac.kr/cse/index.do">
@@ -17,8 +17,7 @@ const MainPage = () => {
             at Konkuk University. 
             <br />
             I am also working as an undergraduate research intern at{' '}
-            <a href="https://gli.konkuk.ac.kr/">Graph &amp; Language Intelligence Lab</a>, advised by Prof.{` `}
-            <a href="https://bkoh509.github.io/">Byungkook Oh</a>.
+            <a href="https://gli.konkuk.ac.kr/">Graph &amp; Language Intelligence Lab</a>, advised by Prof. Byungkook Oh.
           </p>
           <p className="links">
             <a href="mailto:wltkdwns0220@naver.com">Email</a>
@@ -41,8 +40,8 @@ const MainPage = () => {
         </div>
       </section>
 
-      <section className="section">
-        <h2>Research Interests</h2>
+      <section className="section section-indented">
+        <h2>🔬 Research Interests</h2>
         <ul className="list">
           <li>Structured Reasoning in LLMs</li>
           <li>Knowledge-Grounded Reasoning</li>
@@ -50,8 +49,8 @@ const MainPage = () => {
         </ul>
       </section>
 
-      <section className="section">
-        <h2>Education</h2>
+      <section className="section section-indented">
+        <h2>🎓 Education</h2>
         <div className="item">
           <div className="item-media" aria-hidden="true">
             <img src={`${publicUrl}/images/Konkuk_University.png`} alt="Konkuk University Logo" />
@@ -63,15 +62,17 @@ const MainPage = () => {
             <br />
             Konkuk University, Seoul, South Korea
             <br />
-            Mar. 2020 ~ Present (Expected graduation: Feb. 2027)
+            Mar. 2020 ~ Present
+            <br />
+            <em>(Expected graduation: Feb. 2027)</em>
             <br />
             GPA: 4.28 / 4.5, Major GPA: 4.36 / 4.5
           </div>
         </div>
       </section>
 
-      <section className="section">
-        <h2>Experience</h2>
+      <section className="section section-indented">
+        <h2>💼 Experience</h2>
         <div className="item">
           <div className="item-media" aria-hidden="true">
             <img src={`${publicUrl}/images/GLI_Lab.png`} alt="GLI Lab Logo" />
@@ -83,84 +84,150 @@ const MainPage = () => {
             <br />
             Jul. 2024 ~ Present
             <br />
-            <br />
-            Advisor: Prof. Byungkook Oh
+            Advisor: Prof.{` `}
+            <a href="https://bkoh509.github.io/">Byungkook Oh</a>
           </div>
         </div>
       </section>
 
-      <section className="section">
-        <h2>Publications</h2>
-        <div className="pub">
-          <span className="pub-title">
-            Disentangled Global-Local Representations via Relation-Entity Pair Encoding for Hyper-Relational KGs
-          </span>
-          <br />
+      <section className="section section-indented">
+        <h2>📄 Publications</h2>
+        <div className="pub pub-numbered">
+          <span className="pub-index">[1]</span>
+          <div className="pub-content">
+            <span className="pub-title pub-single-line">
+              Disentangled Global-Local Representations via Relation-Entity Pair Encoding for Hyper-Relational KGs
+            </span>
+            <br />
             <span className="name-highlight">Sangjun Ji</span>, Sangjune Kim, Bonyou Koo, Youngho Lee, Xiongnan Jin, and Byungkook Oh*
-          <br />
-          <em>Under Review</em>
+            <br />
+            <em>Under Review</em>
+          </div>
+        </div>
+        <div className="pub pub-numbered">
+          <span className="pub-index">[2]</span>
+          <div className="pub-content">
+            <span className="pub-title pub-single-line">
+              Mention-Context Hypergraph Aggregation for Document-level Relation Extraction
+            </span>
+            {/* <br /> */}
+            {/* <em>(문서 수준 관계 추출을 위한 멘션-문맥 하이퍼그래프 기반 집계 기법)</em> */}
+            <br />
+            <span className="name-highlight">Sangjun Ji</span>, Hye-Yoon Baek, Donghyun Lee and Byungkook Oh*
+            <br />
+            <em>Under Review at KCC 2026</em>
+          </div>
+        </div><div className="pub pub-numbered">
+          <span className="pub-index">[3]</span>
+          <div className="pub-content">
+            <span className="pub-title pub-single-line">
+              Learnable Rule-Modulated LLM Adapter for Document-Level Relation Extraction
+            </span>
+            <br />
+            Hye-Yoon Baek, <span className="name-highlight">Sangjun Ji</span>, Jimyeung Seo, Hae-Yoon Koo and Byungkook Oh*
+            <br />
+            <em>In Progress</em>
+          </div>
         </div>
       </section>
 
-      <section className="section">
-        <h2>Patents</h2>
-        <div className="pub">
-          <span className="pub-title">
-            하이퍼관계형 지식 그래프 상의 하이퍼관계형 사실에 대한 링크 예측 방법 및 장치 
-          </span>
-          <br />
-          (Method and Apparatus for Link Prediction of Hyper-Relational Facts on Hyper-Relational Knowledge Graphs)
-          <br />
-          <span className="name-highlight">Sangjun Ji</span>, Byungkook Oh
-          <br />
-          KR Patent, 출원번호 10-2025-0198284, 출원일 2025년 12월 12일
+      <section className="section section-indented">
+        <h2>💡 Patents</h2>
+        <div className="pub pub-numbered">
+          <span className="pub-index">[1]</span>
+          <div className="pub-content">
+            <span className="pub-title">
+              하이퍼관계형 지식 그래프 상의 하이퍼관계형 사실에 대한 링크 예측 방법 및 장치 
+            </span>
+            <br />
+            <span className="pub-single-line">
+              (Method and Apparatus for Link Prediction of Hyper-Relational Facts on Hyper-Relational Knowledge Graphs)
+            </span>
+            <br />
+            <span className="name-highlight">Sangjun Ji</span>, Byungkook Oh
+            <br />
+            KR Patent, 출원번호 10-2025-0198284, 출원일 2025년 12월 12일
+          </div>
         </div>
       </section>
 
-      <section className="section">
-        <h2>Awards</h2>
-        <div className="pub">
-          <span className="pub-title">
-            카카오x한국정보과학회 AI 에이전트 경진대회
-          </span>
-          <br />
-          Award of Excellence (우수상), 2025
+      <section className="section section-indented">
+        <h2>🏆 Awards</h2>
+        <div className="pub pub-numbered">
+          <span className="pub-index">[1]</span>
+          <div className="pub-content">
+            <span className="pub-title">
+              Kakao × KIISE AI Agent Competition (KSC 2025)
+            </span>
+            <br />
+            <em className="pub-single-line">
+              [P3] Multi-Agentic Graph RAG for Fair Meet-up Location Recommendation and Schedule Coordination
+            </em>
+            <br />
+            <details className="proof-toggle">
+              <summary>
+                Excellence Award (우수상, 3rd tier)
+              </summary>
+              <div className="proof-content">
+                <img
+                  src={`${publicUrl}/assets/[지상준]_KSC2025_1.jpg`}
+                  alt="KSC 2025 award proof 1"
+                />
+                <img
+                  src={`${publicUrl}/assets/[지상준]_KSC2025_2.png`}
+                  alt="KSC 2025 award proof 2"
+                />
+              </div>
+            </details>
+          </div>
         </div>
       </section>
 
-      <section className="section">
-        <h2>Projects</h2>
-        <div className="pub">
-          <span className="pub-title">
-            Multi-Agentic Graph RAG for Fair Meet-up Location Recommendation and Schedule Coordination
-          </span>
-          <br />
-          <em>GLI Lab., Oct. 2025 - Dec. 2025</em>
+      <section className="section section-indented">
+        <h2>🛠️ Projects</h2>
+        <div className="pub pub-numbered">
+          <span className="pub-index">[P3]</span>
+          <div className="pub-content">
+            <span className="pub-title pub-single-line">
+              Multi-Agentic Graph RAG for Fair Meet-up Location Recommendation and Schedule Coordination
+            </span>
+            <br />
+            <em>GLI Lab., Oct. 2025 - Dec. 2025</em>
+          </div>
         </div>
-        <div className="pub">
-          <span className="pub-title">
-            GraphRAG with User-Item Interactions for Recommendation
-          </span>
-          <br />
-          <em>GLI Lab., Mar. 2025 - May. 2025</em>
+        <div className="pub pub-numbered">
+          <span className="pub-index">[P2]</span>
+          <div className="pub-content">
+            <span className="pub-title">
+              GraphRAG with User-Item Interactions for Recommendation
+            </span>
+            <br />
+            <em>GLI Lab., Mar. 2025 - May. 2025</em>
+          </div>
         </div>
-          <div className="pub">
-          <span className="pub-title">
-            Pzzk: A Clean, Serverless iOS Calendar          
-          </span>
-          <br />
-          <em>Team Lett., Jan. 2024 - Feb. 2024</em>
+        <div className="pub pub-numbered">
+          <span className="pub-index">[P1]</span>
+          <div className="pub-content">
+            <span className="pub-title">
+              Pzzk: A Clean, Serverless iOS Calendar          
+            </span>
+            <br />
+            <em>Team Lett., Jan. 2024 - Feb. 2024</em>
+          </div>
         </div>
       </section>
 
-      <section className="section">
-        <h2>Licenses & Certifications</h2>
-        <div className="pub">
-          <span className="pub-title">
-            Craftsman Fork Lift Truck Operator (지게차운전기능사)
-          </span>
-          <br />
-          Dec. 2022
+      <section className="section section-indented">
+        <h2>📜 Licenses & Certifications</h2>
+        <div className="pub pub-numbered">
+          <span className="pub-index">[1]</span>
+          <div className="pub-content">
+            <span className="pub-title">
+              Craftsman Fork Lift Truck Operator (지게차운전기능사)
+            </span>
+            <br />
+            Dec. 2022
+          </div>
         </div>
       </section>
 
