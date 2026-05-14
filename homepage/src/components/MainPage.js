@@ -121,7 +121,7 @@ const MainPage = () => {
           <span className="pub-index">[3]</span>
           <div className="pub-content">
             <span className="pub-title pub-single-line">
-              Learnable Rule-Modulated LLM Adapter for Document-Level Relation Extraction
+              LLM-based Document-Level Relation Extraction with Logical Rule Reasoning
             </span>
             <br />
             Hye-Yoon Baek, <span className="name-highlight">Sangjun Ji</span>, Jimyeung Seo, Hae-Yoon Koo and Byungkook Oh*
@@ -186,6 +186,24 @@ const MainPage = () => {
       <section className="section section-indented">
         <h2>🛠️ Projects</h2>
         <div className="pub pub-numbered">
+          <span className="pub-index">[P5]</span>
+          <div className="pub-content">
+            <span className="pub-title pub-single-line">
+              Graph-based Rule-aware Compliance Framework 
+            </span>
+            <br />
+            <em>Konkuk University., Mar. 2026 - Present</em>
+          </div>
+        </div><div className="pub pub-numbered">
+          <span className="pub-index">[P4]</span>
+          <div className="pub-content">
+            <span className="pub-title pub-single-line">
+              KU래쪄용: AI-Powered Conflict Mediation Chat App 
+            </span>
+            <br />
+            <em>Konkuk University., Mar. 2026 - Present</em>
+          </div>
+        </div><div className="pub pub-numbered">
           <span className="pub-index">[P3]</span>
           <div className="pub-content">
             <span className="pub-title pub-single-line">
@@ -202,7 +220,7 @@ const MainPage = () => {
               GraphRAG with User-Item Interactions for Recommendation
             </span>
             <br />
-            <em>GLI Lab., Mar. 2025 - May. 2025</em>
+            <em>Konkuk University., July. 2024 - Aug. 2024</em>
           </div>
         </div>
         <div className="pub pub-numbered">
