@@ -91,9 +91,14 @@ const MainPage = () => {
       </section>
 
       <section className="section section-indented">
-        <h2>📄 Publications</h2>
+        <h2 className="section-heading-with-note">
+          📄 Publications
+          <span className="heading-note">
+            <em><strong>C</strong>: Conference, <strong>U</strong>: Under Review, <strong>P</strong>: In Process, <strong>*</strong>: Corresponding Author</em>
+          </span>
+        </h2>
         <div className="pub pub-numbered">
-          <span className="pub-index">[1]</span>
+          <span className="pub-index">[C1]</span>
           <div className="pub-content">
             <span className="pub-title pub-single-line">
               Disentangled Global-Local Representations via Relation-Entity Pair Encoding for Hyper-Relational KGs
@@ -101,11 +106,11 @@ const MainPage = () => {
             <br />
             <span className="name-highlight">Sangjun Ji</span>, Sangjune Kim, Bonyou Koo, Youngho Lee, Xiongnan Jin, and Byungkook Oh*
             <br />
-            <em>Under Review</em>
+            <span className="conference-line"><span className="conference-highlight">KDD 2026</span>: ACM SIGKDD International Conference on Knowledge Discovery and Data Mining 2026</span>
           </div>
         </div>
         <div className="pub pub-numbered">
-          <span className="pub-index">[2]</span>
+          <span className="pub-index">[U1]</span>
           <div className="pub-content">
             <span className="pub-title pub-single-line">
               Mention-Context Hypergraph Aggregation for Document-level Relation Extraction
@@ -118,7 +123,7 @@ const MainPage = () => {
             <em>Under Review at KCC 2026</em>
           </div>
         </div><div className="pub pub-numbered">
-          <span className="pub-index">[3]</span>
+          <span className="pub-index">[P1]</span>
           <div className="pub-content">
             <span className="pub-title pub-single-line">
               LLM-based Document-Level Relation Extraction with Logical Rule Reasoning
@@ -136,7 +141,7 @@ const MainPage = () => {
         <div className="pub pub-numbered">
           <span className="pub-index">[1]</span>
           <div className="pub-content">
-            <span className="pub-title">
+            <span className="pub-title pub-single-line">
               하이퍼관계형 지식 그래프 상의 하이퍼관계형 사실에 대한 링크 예측 방법 및 장치 
             </span>
             <br />
@@ -156,7 +161,7 @@ const MainPage = () => {
         <div className="pub pub-numbered">
           <span className="pub-index">[1]</span>
           <div className="pub-content">
-            <span className="pub-title">
+            <span className="pub-title pub-single-line">
               Kakao × KIISE AI Agent Competition (KSC 2025)
             </span>
             <br />
@@ -216,7 +221,7 @@ const MainPage = () => {
         <div className="pub pub-numbered">
           <span className="pub-index">[P2]</span>
           <div className="pub-content">
-            <span className="pub-title">
+            <span className="pub-title pub-single-line">
               GraphRAG with User-Item Interactions for Recommendation
             </span>
             <br />
@@ -226,7 +231,7 @@ const MainPage = () => {
         <div className="pub pub-numbered">
           <span className="pub-index">[P1]</span>
           <div className="pub-content">
-            <span className="pub-title">
+            <span className="pub-title pub-single-line">
               Pzzk: A Clean, Serverless iOS Calendar          
             </span>
             <br />
