@@ -94,11 +94,11 @@ const MainPage = () => {
         <h2 className="section-heading-with-note">
           📄 Publications
           <span className="heading-note">
-            <em><strong>C</strong>: Conference, <strong>U</strong>: Under Review, <strong>P</strong>: In Process, <strong>*</strong>: Corresponding Author</em>
+            <em><strong>U</strong>: Under Review, <strong>*</strong>: Corresponding Author</em>
           </span>
         </h2>
         <div className="pub pub-numbered">
-          <span className="pub-index">[C1]</span>
+          <span className="pub-index">[1]</span>
           <div className="pub-content">
             <span className="pub-title pub-single-line">
               Disentangled Global-Local Representations via Relation-Entity Pair Encoding for Hyper-Relational KGs
@@ -107,10 +107,12 @@ const MainPage = () => {
             <span className="name-highlight">Sangjun Ji</span>, Sangjune Kim, Bonyou Koo, Youngho Lee, Xiongnan Jin, and Byungkook Oh*
             <br />
             <span className="conference-line"><span className="conference-highlight">KDD 2026</span>: ACM SIGKDD International Conference on Knowledge Discovery and Data Mining 2026</span>
+            <br />
+            <em>Research Track (Acceptance Rate: 18.5%)</em>
           </div>
         </div>
         <div className="pub pub-numbered">
-          <span className="pub-index">[U1]</span>
+          <span className="pub-index">[2]</span>
           <div className="pub-content">
             <span className="pub-title pub-single-line">
               Mention-Context Hypergraph Aggregation for Document-level Relation Extraction
@@ -120,10 +122,12 @@ const MainPage = () => {
             <br />
             <span className="name-highlight">Sangjun Ji</span>, Hye-Yoon Baek, Donghyun Lee and Byungkook Oh*
             <br />
-            <em>Under Review at KCC 2026</em>
+            <em>Korea Computer Congress (KCC) 2026</em>
+            <br />
+            <em>Undergraduate Paper Track</em>
           </div>
         </div><div className="pub pub-numbered">
-          <span className="pub-index">[P1]</span>
+          <span className="pub-index">[U1]</span>
           <div className="pub-content">
             <span className="pub-title pub-single-line">
               LLM-based Document-Level Relation Extraction with Logical Rule Reasoning
@@ -131,7 +135,7 @@ const MainPage = () => {
             <br />
             Hye-Yoon Baek, <span className="name-highlight">Sangjun Ji</span>, Jimyeung Seo, Hae-Yoon Koo and Byungkook Oh*
             <br />
-            <em>In Progress</em>
+            <em>Under Review</em>
           </div>
         </div>
       </section>
