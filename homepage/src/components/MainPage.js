@@ -104,7 +104,7 @@ const MainPage = () => {
               Joint Global-Local Representations via Relation-Entity Pair Encoding for Hyper-Relational Knowledge Graphs
             </span>
             <br />
-            <span className="name-highlight">Sangjun Ji</span>, Sangjune Kim, Bonyou Koo, Youngho Lee, Xiongnan Jin, and Byungkook Oh*
+            <span className="name-highlight">Sangjun Ji</span>, Sangjune Kim, Bonyou Koo, Youngho Lee, Xiongnan Jin and Byungkook Oh*
             <br />
             <span className="conference-line"><span className="conference-highlight">KDD 2026</span>: ACM SIGKDD International Conference on Knowledge Discovery and Data Mining 2026</span>
             <br />
@@ -130,10 +130,10 @@ const MainPage = () => {
           <span className="pub-index">[U1]</span>
           <div className="pub-content">
             <span className="pub-title pub-single-line">
-              LLM-based Document-Level Relation Extraction with Logical Rule Reasoning
+              Internalizing Negation-Gated Logical Rules into LLMs for Document-Level Relation Extraction
             </span>
             <br />
-            Hye-Yoon Baek, <span className="name-highlight">Sangjun Ji</span>, Jimyeung Seo, Hae-Yoon Koo and Byungkook Oh*
+            Hye-Yoon Baek, <span className="name-highlight">Sangjun Ji</span>, Jimyeung Seo, Hae-Yoon Koo, Xiongnan Jin and Byungkook Oh*
             <br />
             <em>Under Review</em>
           </div>
