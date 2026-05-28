@@ -101,7 +101,7 @@ const MainPage = () => {
           <span className="pub-index">[1]</span>
           <div className="pub-content">
             <span className="pub-title pub-single-line">
-              Disentangled Global-Local Representations via Relation-Entity Pair Encoding for Hyper-Relational KGs
+              Joint Global-Local Representations via Relation-Entity Pair Encoding for Hyper-Relational Knowledge Graphs
             </span>
             <br />
             <span className="name-highlight">Sangjun Ji</span>, Sangjune Kim, Bonyou Koo, Youngho Lee, Xiongnan Jin, and Byungkook Oh*
@@ -122,7 +122,7 @@ const MainPage = () => {
             <br />
             <span className="name-highlight">Sangjun Ji</span>, Hye-Yoon Baek, Donghyun Lee and Byungkook Oh*
             <br />
-            <em>Korea Computer Congress (KCC) 2026</em>
+            <span className="conference-line">Korea Computer Congress (KCC) 2026</span>
             <br />
             <em>Undergraduate Paper Track</em>
           </div>
