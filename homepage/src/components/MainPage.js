@@ -127,7 +127,7 @@ const MainPage = () => {
             <em>Undergraduate Paper Track</em>
           </div>
         </div><div className="pub pub-numbered">
-          <span className="pub-index">[U1]</span>
+          <span className="pub-index">[U]</span>
           <div className="pub-content">
             <span className="pub-title pub-single-line">
               Internalizing Negation-Gated Logical Rules into LLMs for Document-Level Relation Extraction
@@ -195,7 +195,7 @@ const MainPage = () => {
       <section className="section section-indented">
         <h2>🛠️ Projects</h2>
         <div className="pub pub-numbered">
-          <span className="pub-index">[P5]</span>
+          <span className="pub-index">[5]</span>
           <div className="pub-content">
             <span className="pub-title pub-single-line">
               Graph-based Rule-aware Compliance Framework 
@@ -204,7 +204,7 @@ const MainPage = () => {
             <em>Konkuk University., Mar. 2026 - Present</em>
           </div>
         </div><div className="pub pub-numbered">
-          <span className="pub-index">[P4]</span>
+          <span className="pub-index">[4]</span>
           <div className="pub-content">
             <span className="pub-title pub-single-line">
               KU래쪄용: AI-Powered Conflict Mediation Chat App 
@@ -213,7 +213,7 @@ const MainPage = () => {
             <em>Konkuk University., Mar. 2026 - Present</em>
           </div>
         </div><div className="pub pub-numbered">
-          <span className="pub-index">[P3]</span>
+          <span className="pub-index">[3]</span>
           <div className="pub-content">
             <span className="pub-title pub-single-line">
               Multi-Agentic Graph RAG for Fair Meet-up Location Recommendation and Schedule Coordination
@@ -223,7 +223,7 @@ const MainPage = () => {
           </div>
         </div>
         <div className="pub pub-numbered">
-          <span className="pub-index">[P2]</span>
+          <span className="pub-index">[2]</span>
           <div className="pub-content">
             <span className="pub-title pub-single-line">
               GraphRAG with User-Item Interactions for Recommendation
@@ -233,7 +233,7 @@ const MainPage = () => {
           </div>
         </div>
         <div className="pub pub-numbered">
-          <span className="pub-index">[P1]</span>
+          <span className="pub-index">[1]</span>
           <div className="pub-content">
             <span className="pub-title pub-single-line">
               Pzzk: A Clean, Serverless iOS Calendar          
