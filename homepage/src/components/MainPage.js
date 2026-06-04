@@ -94,7 +94,7 @@ const MainPage = () => {
         <h2 className="section-heading-with-note">
           📄 Publications
           <span className="heading-note">
-            <em><strong>U</strong>: Under Review, <strong>*</strong>: Corresponding Author</em>
+            <em><strong>*</strong>: Corresponding Author</em>
           </span>
         </h2>
         <div className="pub pub-numbered">
@@ -106,7 +106,7 @@ const MainPage = () => {
             <br />
             <span className="name-highlight">Sangjun Ji</span>, Sangjune Kim, Bonyou Koo, Youngho Lee, Xiongnan Jin and Byungkook Oh*
             <br />
-            <span className="conference-line"><span className="conference-highlight">KDD 2026</span>: ACM SIGKDD International Conference on Knowledge Discovery and Data Mining 2026</span>
+            <span className="conference-line">ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD), 2026</span>
             <br />
             <em>Research Track (Acceptance Rate: 18.5%)</em>
           </div>
@@ -122,12 +122,12 @@ const MainPage = () => {
             <br />
             <span className="name-highlight">Sangjun Ji</span>, Hye-Yoon Baek, Donghyun Lee and Byungkook Oh*
             <br />
-            <span className="conference-line">Korea Computer Congress (KCC) 2026</span>
+            <span className="conference-line">Korea Computer Congress (KCC), 2026</span>
             <br />
             <em>Undergraduate Paper Track</em>
           </div>
         </div><div className="pub pub-numbered">
-          <span className="pub-index">[U]</span>
+          <span className="pub-index">[3]</span>
           <div className="pub-content">
             <span className="pub-title pub-single-line">
               Internalizing Negation-Gated Logical Rules into LLMs for Document-Level Relation Extraction
