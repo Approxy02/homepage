@@ -274,6 +274,10 @@ img {
   font-style: italic;
 }
 
+.under-review {
+  color: #777;
+}
+
 .empty {
   margin: 0;
   color: #777;

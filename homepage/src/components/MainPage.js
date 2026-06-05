@@ -135,7 +135,7 @@ const MainPage = () => {
             <br />
             Hye-Yoon Baek, <span className="name-highlight">Sangjun Ji</span>, Jimyeung Seo, Hae-Yoon Koo, Xiongnan Jin and Byungkook Oh*
             <br />
-            <em>Under Review at EMNLP 2026</em>
+            <em className="under-review">(Under Review)</em>
           </div>
         </div>
       </section>
