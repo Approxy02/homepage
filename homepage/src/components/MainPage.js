@@ -15,12 +15,12 @@ const MainPage = () => {
               Department of Computer Science and Engineering
             </a>{' '}
             at Konkuk University. 
-            <br />
+            {/* <br />
             I am also working as an undergraduate research intern at{' '}
-            <a href="https://gli.konkuk.ac.kr/">Graph &amp; Language Intelligence Lab</a>, advised by Prof. Byungkook Oh.
+            <a href="https://gli.konkuk.ac.kr/">Graph &amp; Language Intelligence Lab</a>, advised by Prof. Byungkook Oh. */}
           </p>
           <p className="links">
-            <a href="mailto:wltkdwns0220@naver.com">Email</a>
+            <a href="mailto:sangjunji02@gmail.com">Email</a>
             <span className="link-sep">/</span>
             <a
               href={`${publicUrl}/assets/[지상준]_CV.pdf`}
@@ -75,6 +75,22 @@ const MainPage = () => {
         <h2>💼 Experience</h2>
         <div className="item">
           <div className="item-media" aria-hidden="true">
+            <img src={`${publicUrl}/images/kaist_ai.svg`} alt="KAIST AI Logo" />
+          </div>
+          <div className="item-body">
+            <strong>KAIRI Internship</strong>
+            <br />
+            <a href="https://sites.google.com/view/kaistdata">Data Mining Lab</a>, KAIST AI
+            <br />
+            Jul. 2026 ~ Present
+            <br />
+            Advisor: Prof.{` `}
+            <a href="https://kijungs.github.io/">Kijung Shin</a>
+          </div>
+        </div>
+
+        <div className="item">
+          <div className="item-media" aria-hidden="true">
             <img src={`${publicUrl}/images/GLI_Lab.png`} alt="GLI Lab Logo" />
           </div>
           <div className="item-body">
@@ -82,7 +98,7 @@ const MainPage = () => {
             <br />
             <a href="https://gli.konkuk.ac.kr/">Graph &amp; Language Intelligence Lab</a>, Konkuk University
             <br />
-            Jul. 2024 ~ Present
+            Jul. 2024 ~ Jun. 2026
             <br />
             Advisor: Prof.{` `}
             <a href="https://bkoh509.github.io/">Byungkook Oh</a>
@@ -98,7 +114,19 @@ const MainPage = () => {
           </span>
         </h2>
         <div className="pub pub-numbered">
-          <span className="pub-index">[1]</span>
+          <span className="pub-index">[3]</span>
+          <div className="pub-content">
+            <span className="pub-title pub-single-line">
+              Internalizing Negation-Gated Logical Rules into LLMs for Document-Level Relation Extraction
+            </span>
+            <br />
+            Hye-Yoon Baek, <span className="name-highlight">Sangjun Ji</span>, Jimyeung Seo, Hae-Yoon Koo, Xiongnan Jin and Byungkook Oh*
+            <br />
+            <em className="under-review">Under Review</em>
+          </div>
+        </div>
+        <div className="pub pub-numbered">
+          <span className="pub-index">[2]</span>
           <div className="pub-content">
             <span className="pub-title pub-single-line">
               Joint Global-Local Representations via Relation-Entity Pair Encoding for Hyper-Relational Knowledge Graphs
@@ -112,7 +140,7 @@ const MainPage = () => {
           </div>
         </div>
         <div className="pub pub-numbered">
-          <span className="pub-index">[2]</span>
+          <span className="pub-index">[1]</span>
           <div className="pub-content">
             <span className="pub-title pub-single-line">
               Mention-Context Hypergraph Aggregation for Document-level Relation Extraction
@@ -125,17 +153,6 @@ const MainPage = () => {
             <span className="conference-line">Korea Computer Congress (KCC), 2026</span>
             <br />
             <em>Undergraduate Paper Track</em>
-          </div>
-        </div><div className="pub pub-numbered">
-          <span className="pub-index">[3]</span>
-          <div className="pub-content">
-            <span className="pub-title pub-single-line">
-              Internalizing Negation-Gated Logical Rules into LLMs for Document-Level Relation Extraction
-            </span>
-            <br />
-            Hye-Yoon Baek, <span className="name-highlight">Sangjun Ji</span>, Jimyeung Seo, Hae-Yoon Koo, Xiongnan Jin and Byungkook Oh*
-            <br />
-            <em className="under-review">(Under Review)</em>
           </div>
         </div>
       </section>
@@ -198,21 +215,23 @@ const MainPage = () => {
           <span className="pub-index">[5]</span>
           <div className="pub-content">
             <span className="pub-title pub-single-line">
-              Graph-based Rule-aware Compliance Framework 
-            </span>
-            <br />
-            <em>Konkuk University., Mar. 2026 - Present</em>
-          </div>
-        </div><div className="pub pub-numbered">
-          <span className="pub-index">[4]</span>
-          <div className="pub-content">
-            <span className="pub-title pub-single-line">
               KU래쪄용: AI-Powered Conflict Mediation Chat App 
             </span>
             <br />
             <em>Konkuk University., Mar. 2026 - Present</em>
           </div>
-        </div><div className="pub pub-numbered">
+        </div>
+        <div className="pub pub-numbered">
+          <span className="pub-index">[4]</span>
+          <div className="pub-content">
+            <span className="pub-title pub-single-line">
+              Graph-based Rule-aware Compliance Framework 
+            </span>
+            <br />
+            <em>Konkuk University., Mar. 2026 - Jun. 2026</em>
+          </div>
+        </div>
+        <div className="pub pub-numbered">
           <span className="pub-index">[3]</span>
           <div className="pub-content">
             <span className="pub-title pub-single-line">
