@@ -524,7 +524,11 @@ img {
 
 .publication-meta span,
 .publication-meta em {
-  display: block;
+  display: inline;
+}
+
+.meta-separator {
+  margin: 0 6px;
 }
 
 .name-highlight {

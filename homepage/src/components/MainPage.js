@@ -102,7 +102,7 @@ const MainPage = () => {
     {
       date: 'Oct. 2023 - Jul. 2024',
       title: 'Co-Founder',
-      org: 'Lett Team',
+      org: 'Team Lett',
       inlineDetail: true,
       detail: (
         <>
@@ -257,11 +257,18 @@ const MainPage = () => {
               <a href="https://cse.konkuk.ac.kr/cse/index.do">
                 Department of Computer Science and Engineering
               </a>{' '}
-              at Konkuk University.
+              at {' '}
+              <a href="https://www.konkuk.ac.kr/">Konkuk University</a>.
               <br />
               I am also working as a KAIRI intern at{' '}
-              <a href="https://sites.google.com/view/kaistdata">Data Mining Lab</a>, KAIST AI,
+              <a href="https://sites.google.com/view/kaistdata">Data Mining Lab</a>, {' '}
+              <a href="https://gsai.kaist.ac.kr/">KAIST AI</a>, 
               advised by Prof. <a href="https://kijungs.github.io/">Kijung Shin</a>.
+              <br />
+              Prior to that, I worked as an undergraduate research intern at{' '}
+              <a href="https://gli.konkuk.ac.kr/">Graph &amp; Language Intelligence Lab</a>,{' '}
+              Konkuk University, advised by Prof.{' '}
+              <a href="https://bkoh509.github.io/">Byungkook Oh</a>.
             </p>
 
             <div className="btn-row">
@@ -387,7 +394,12 @@ const MainPage = () => {
                       {publication.conference && (
                         <p className="muted publication-meta">
                           <em>{publication.conference}</em>
-                          {publication.track && <em>{publication.track}</em>}
+                          {publication.track && (
+                            <>
+                              <span className="meta-separator">—</span>
+                              <em>{publication.track}</em>
+                            </>
+                          )}
                         </p>
                       )}
                     </div>
