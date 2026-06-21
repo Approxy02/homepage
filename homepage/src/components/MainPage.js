@@ -156,7 +156,7 @@ const MainPage = () => {
         </>
       ),
       conference:
-        'ACM SIGKDD International Conference on Knowledge Discovery and Data Mining 2026',
+        'ACM SIGKDD Conference on Knowledge Discovery and Data Mining 2026',
       track: 'Research Track (Acceptance Rate: 18.5%)',
     },
     {
@@ -204,6 +204,7 @@ const MainPage = () => {
     {
       index: '[3]',
       title: 'Multi-Agentic Graph RAG for Fair Meet-up Location Recommendation and Schedule Coordination',
+      award: 'Excellence Award, Kakao x KIISE AI Agent Competition (KSC 2025)',
       meta: 'GLI Lab, Oct. 2025 - Dec. 2025',
     },
     {
@@ -477,6 +478,11 @@ const MainPage = () => {
                     <span className="inline-index">{project.index}</span>
                     <div>
                       <h3>{project.title}</h3>
+                      {project.award && (
+                        <p className="award-highlight">
+                          <em>{project.award}</em>
+                        </p>
+                      )}
                       <p className="muted">{project.meta}</p>
                     </div>
                   </div>

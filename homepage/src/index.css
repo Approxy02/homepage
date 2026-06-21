@@ -411,6 +411,10 @@ img {
   color: var(--muted) !important;
 }
 
+.award-highlight {
+  color: var(--accent) !important;
+}
+
 .org-logo {
   width: 96px;
   height: 96px;
