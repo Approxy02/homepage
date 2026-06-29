@@ -52,11 +52,7 @@ const MainPage = () => {
     { icon: 'cv', label: 'CV', href: `${publicUrl}/assets/CV_(v260616).pdf` },
     { icon: 'github', label: 'GitHub', href: 'https://github.com/Approxy02' },
     { icon: 'scholar', label: 'Google Scholar', href: '' },
-    {
-      icon: 'linkedin',
-      label: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/sangjun-ji-6616933b9/',
-    },
+    { icon: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/in/sangjun-ji-6616933b9/', },
   ];
 
   const interests = [
@@ -108,7 +104,7 @@ const MainPage = () => {
         <>
           Co-founded with <a href="https://gibsonlee01.github.io/">Jiwoo Lee</a> and <a href="https://junghunkim916.github.io/">Junghun Kim</a>
           <br />
-          Built apps and web services through tech entrepreneurship, including Pzzk (calendar).
+          Built apps and web services through tech entrepreneurship, including Pzzk (calendar)
         </>
       ),
       logo: `${publicUrl}/images/Lett.png`,
@@ -156,7 +152,7 @@ const MainPage = () => {
         </>
       ),
       conference:
-        'ACM SIGKDD Conference on Knowledge Discovery and Data Mining 2026',
+        'ACM SIGKDD Conference on Knowledge Discovery and Data Mining, 2026',
       track: 'Research Track (Acceptance Rate: 18.5%)',
     },
     {
@@ -169,7 +165,7 @@ const MainPage = () => {
           Byungkook Oh*
         </>
       ),
-      conference: 'Korea Computer Congress 2026',
+      conference: 'Korea Computer Congress, 2026',
       track: 'Undergraduate Paper Track',
     },
   ];
@@ -335,7 +331,7 @@ const MainPage = () => {
                   <h3>B.S. in Computer Science and Engineering</h3>
                   <p>Konkuk University, Seoul, Republic of Korea</p>
                   <p className="muted">(Expected graduation: Feb. 2027)</p>
-                  <p className="muted">GPA: 4.28 / 4.5, Major GPA: 4.36 / 4.5</p>
+                  <p className="muted">GPA: 4.36 / 4.5, Major GPA: 4.47 / 4.5</p>
                 </div>
               </div>
             </div>
