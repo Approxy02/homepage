@@ -466,6 +466,21 @@ img {
   padding: 16px 24px;
 }
 
+.section-subtle {
+  padding-top: 44px;
+}
+
+.subtle-card {
+  background: transparent;
+  border-color: var(--border);
+  box-shadow: none;
+}
+
+.subtle-card:hover {
+  box-shadow: none;
+  transform: none;
+}
+
 #publications .pub-card {
   padding-top: 10px;
   padding-bottom: 10px;
