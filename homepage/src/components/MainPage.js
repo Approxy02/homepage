@@ -49,7 +49,7 @@ const MainPage = () => {
 
   const links = [
     { icon: 'email', label: 'Email', href: 'mailto:sangjunji02@gmail.com' },
-    { icon: 'cv', label: 'CV', href: `${publicUrl}/assets/CV_(v260616).pdf` },
+    { icon: 'cv', label: 'CV', href: `${publicUrl}/assets/CV_(v260713).pdf` },
     { icon: 'github', label: 'GitHub', href: 'https://github.com/Approxy02' },
     { icon: 'scholar', label: 'Google Scholar', href: '' },
     { icon: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/in/sangjun-ji-6616933b9/', },
