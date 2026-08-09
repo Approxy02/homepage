@@ -7,7 +7,11 @@ const links = [
   { icon: 'email', label: 'Email', href: 'mailto:sangjunji02@gmail.com' },
   { icon: 'cv', label: 'CV', href: `${publicUrl}/assets/CV_(v260713).pdf` },
   { icon: 'github', label: 'GitHub', href: 'https://github.com/Approxy02' },
-  { icon: 'scholar', label: 'Google Scholar', href: '' },
+  {
+    icon: 'scholar',
+    label: 'Google Scholar',
+    href: 'https://scholar.google.co.kr/citations?user=K6HnM2IAAAAJ&hl=ko',
+  },
   {
     icon: 'linkedin',
     label: 'LinkedIn',
