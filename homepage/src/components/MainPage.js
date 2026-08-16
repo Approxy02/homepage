@@ -17,6 +17,12 @@ const SectionDivider = () => <div className="divider" />;
 
 const MainPage = () => (
   <>
+    <div className="ambient-background" aria-hidden="true">
+      <span className="ambient-gradient ambient-gradient-base" />
+      <span className="ambient-gradient ambient-gradient-secondary" />
+      <span className="ambient-gradient ambient-gradient-tertiary" />
+    </div>
+
     <SiteNav />
 
     <main className="page">

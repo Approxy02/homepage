@@ -1,41 +1,54 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+const publicationFilters = [
+  'All',
+  'Conference',
+  'Domestic',
+  'Workshop',
+  'Journal',
+  'Preprint',
+  'Under Review',
+];
 
 const publications = [
   {
-    index: '[3]',
+    index: '[U1]',
+    year: '2026',
+    category: 'Under Review',
     venue: 'Under Review',
     title:
       'Internalizing Negation-Gated Logical Rules into LLMs for Document-Level Relation Extraction',
     authors: (
       <>
-        Hye-Yoon Baek, <span className="name-highlight">Sangjun Ji</span>, Jimyeung Seo,
-        Hae-Yoon Koo, Xiongnan Jin and Byungkook Oh*
+        Hye-Yoon Baek, <span className="name-highlight">Sangjun Ji</span>, Jimyeung Seo, Hae-Yoon Koo, Xiongnan Jin and Byungkook Oh*
       </>
     ),
   },
   {
-    index: '[2]',
+    index: '[C1]',
+    year: '2026',
+    category: 'Conference',
     venue: 'KDD 2026',
     title:
       'Joint Global-Local Representations via Relation-Entity Pair Encoding for Hyper-Relational Knowledge Graphs',
     href: 'https://dl.acm.org/doi/10.1145/3770855.3818000',
     authors: (
       <>
-        <span className="name-highlight">Sangjun Ji</span>, Sangjune Kim, Bonyou Koo,
-        Youngho Lee, Xiongnan Jin and Byungkook Oh*
+        <span className="name-highlight">Sangjun Ji</span>, Sangjune Kim, Bonyou Koo, Youngho Lee, Xiongnan Jin and Byungkook Oh*
       </>
     ),
     conference: 'ACM SIGKDD Conference on Knowledge Discovery and Data Mining, 2026',
     track: 'Research Track (Acceptance Rate: 18.5%)',
   },
   {
-    index: '[1]',
+    index: '[D1]',
+    year: '2026',
+    category: 'Domestic',
     venue: 'KCC 2026',
     title: 'Mention-Context Hypergraph Aggregation for Document-level Relation Extraction',
     authors: (
       <>
-        <span className="name-highlight">Sangjun Ji</span>, Hye-Yoon Baek, Donghyun Lee and
-        Byungkook Oh*
+        <span className="name-highlight">Sangjun Ji</span>, Hye-Yoon Baek, Donghyun Lee and Byungkook Oh*
       </>
     ),
     conference: 'Korea Computer Congress, 2026',
@@ -43,62 +56,114 @@ const publications = [
   },
 ];
 
-const PublicationsSection = () => (
-  <section id="publications" className="section">
-    <div className="section-heading">
-      <div className="section-label">Publications</div>
-      <p className="heading-note">
-        <strong>*</strong>: Corresponding Author
-      </p>
-    </div>
-    <div className="card-list">
-      {publications.map((publication) => {
-        const PublicationCard = publication.href ? 'a' : 'article';
+const PublicationsSection = () => {
+  const [activeFilter, setActiveFilter] = useState('All');
+  const filteredPublications =
+    activeFilter === 'All'
+      ? publications
+      : publications.filter((publication) => publication.category === activeFilter);
+  const publicationsByYear = filteredPublications.reduce((groups, publication) => {
+    const yearGroup = groups.get(publication.year) || [];
+    yearGroup.push(publication);
+    groups.set(publication.year, yearGroup);
+    return groups;
+  }, new Map());
 
-        return (
-          <PublicationCard
-            className={`pub-card${publication.href ? ' pub-card-link' : ''}`}
-            key={publication.index}
-            {...(publication.href
-              ? {
-                  href: publication.href,
-                  target: '_blank',
-                  rel: 'noopener noreferrer',
-                  'aria-label': `${publication.title} — View paper`,
-                }
-              : {})}
+  return (
+    <section id="publications" className="section">
+      <div className="section-heading">
+        <h2 className="section-label">Publications</h2>
+        <p className="heading-note">
+          <strong>*</strong> Corresponding author
+        </p>
+      </div>
+
+      <div className="publication-filters" aria-label="Publication filters">
+        {publicationFilters.map((filter) => (
+          <button
+            className={`publication-filter${activeFilter === filter ? ' is-active' : ''}`}
+            type="button"
+            aria-pressed={activeFilter === filter}
+            onClick={() => setActiveFilter(filter)}
+            key={filter}
           >
-            <div className="card-body">
-              <div className="indexed-card">
-                <span className="inline-index">{publication.index}</span>
-                <div>
-                  <div className="card-kicker">{publication.venue}</div>
-                  <h3>{publication.title}</h3>
-                  <p>{publication.authors}</p>
-                  {publication.conference && (
-                    <p className="muted publication-meta">
-                      <em>{publication.conference}</em>
-                      {publication.track && (
-                        <>
-                          <span className="meta-separator">—</span>
-                          <em>{publication.track}</em>
-                        </>
-                      )}
-                    </p>
-                  )}
-                </div>
+            {filter}
+          </button>
+        ))}
+      </div>
+
+      <div className="publication-years" aria-live="polite">
+        {publicationsByYear.size > 0 ? (
+          [...publicationsByYear.entries()].map(([year, yearPublications]) => (
+            <section
+              className="publication-year-group"
+              aria-labelledby={`publication-year-${year}`}
+              key={year}
+            >
+              <div className="publication-year-heading">
+                <h3 id={`publication-year-${year}`}>{year}</h3>
+                <span aria-hidden="true" />
               </div>
-            </div>
-            {publication.href && (
-              <span className="paper-link-cue" aria-hidden="true">
-                View paper <span>↗</span>
-              </span>
-            )}
-          </PublicationCard>
-        );
-      })}
-    </div>
-  </section>
-);
+
+              <div className="publication-list">
+                {yearPublications.map((publication) => {
+                  const PublicationCard = publication.href ? 'a' : 'article';
+
+                  return (
+                    <PublicationCard
+                      className={`publication-card${
+                        publication.href ? ' publication-card-link' : ''
+                      }`}
+                      key={publication.index}
+                      {...(publication.href
+                        ? {
+                            href: publication.href,
+                            target: '_blank',
+                            rel: 'noopener noreferrer',
+                            'aria-label': `${publication.title} — View paper`,
+                          }
+                        : {})}
+                    >
+                      <div className="publication-eyebrow">
+                        <span className="publication-index">{publication.index}</span>
+                        <span className="publication-venue">{publication.venue}</span>
+                        {publication.href && (
+                          <span className="publication-link-cue" aria-hidden="true">
+                            View paper <span>↗</span>
+                          </span>
+                        )}
+                      </div>
+
+                      <h4 className="publication-title">{publication.title}</h4>
+                      <p className="publication-authors">{publication.authors}</p>
+
+                      {publication.conference && (
+                        <p className="publication-meta">
+                          <span>{publication.conference}</span>
+                          {publication.track && (
+                            <>
+                              <span className="meta-separator" aria-hidden="true">
+                                ·
+                              </span>
+                              <span>{publication.track}</span>
+                            </>
+                          )}
+                        </p>
+                      )}
+                    </PublicationCard>
+                  );
+                })}
+              </div>
+            </section>
+          ))
+        ) : (
+          <p className="publication-empty">
+            No {activeFilter.toLowerCase()} publications yet.
+          </p>
+        )}
+      </div>
+    </section>
+  );
+};
 
 export default PublicationsSection;
