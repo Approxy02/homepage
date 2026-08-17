@@ -932,12 +932,6 @@ img {
   text-align: center;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .ambient-gradient {
-    animation: none;
-  }
-}
-
 @media (max-width: 760px) {
   .nav-links {
     gap: 18px;
