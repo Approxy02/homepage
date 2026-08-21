@@ -7,15 +7,14 @@ const publicationFilters = [
   'Workshop',
   'Journal',
   'Preprint',
-  'Under Review',
 ];
 
 const publications = [
   {
-    index: '[U1]',
+    index: '[C2]',
     year: '2026',
-    category: 'Under Review',
-    venue: 'Under Review',
+    category: 'Conference',
+    venue: 'EMNLP 2026 Findings',
     title:
       'Internalizing Negation-Gated Logical Rules into LLMs for Document-Level Relation Extraction',
     authors: (
@@ -23,6 +22,8 @@ const publications = [
         Hye-Yoon Baek, <span className="name-highlight">Sangjun Ji</span>, Jimyeung Seo, Hae-Yoon Koo, Xiongnan Jin and Byungkook Oh*
       </>
     ),
+    conference: 'Conference on Empirical Methods in Natural Language Processing (EMNLP), 2026',
+    track: 'Findings Track (Acceptance Rate: 14.3%)',
   },
   {
     index: '[C1]',

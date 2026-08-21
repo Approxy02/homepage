@@ -5,7 +5,7 @@ const publicUrl = process.env.PUBLIC_URL || '';
 
 const links = [
   { icon: 'email', label: 'Email', href: 'mailto:sangjunji02@gmail.com' },
-  { icon: 'cv', label: 'CV', href: `${publicUrl}/assets/CV_(v260816).pdf` },
+  { icon: 'cv', label: 'CV', href: `${publicUrl}/assets/CV_(v260821).pdf` },
   { icon: 'github', label: 'GitHub', href: 'https://github.com/Approxy02' },
   {
     icon: 'scholar',
