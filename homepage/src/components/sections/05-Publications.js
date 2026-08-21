@@ -22,8 +22,8 @@ const publications = [
         Hye-Yoon Baek, <span className="name-highlight">Sangjun Ji</span>, Jimyeung Seo, Hae-Yoon Koo, Xiongnan Jin and Byungkook Oh*
       </>
     ),
-    conference: 'Conference on Empirical Methods in Natural Language Processing (EMNLP), 2026',
-    track: 'Findings Track (Acceptance Rate: 14.3%)',
+    conference: 'Conference on Empirical Methods in Natural Language Processing, 2026',
+    track: 'Findings Paper (Acceptance Rate: 14.3%)',
   },
   {
     index: '[C1]',
