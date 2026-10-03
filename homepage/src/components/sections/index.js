@@ -1,0 +1,10 @@
+export { default as AboutSection } from './01-About';
+export { default as ResearchSection } from './02-Research';
+export { default as EducationSection } from './03-Education';
+export { default as ExperienceSection } from './04-Experience';
+export { default as PublicationsSection } from './05-Publications';
+export { default as PatentsSection } from './06-Patents';
+export { default as AwardsSection } from './07-Awards';
+export { default as ProjectsSection } from './08-Projects';
+export { default as CertificationsSection } from './09-Certifications';
+export { default as ScholarshipsSection } from './10-Scholarships';
