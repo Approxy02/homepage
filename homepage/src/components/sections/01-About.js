@@ -10,7 +10,7 @@ const links = [
   {
     icon: 'scholar',
     label: 'Google Scholar',
-    href: 'https://scholar.google.co.kr/citations?user=K6HnM2IAAAAJ&hl=ko',
+    href: 'https://scholar.google.co.kr/citations?user=K6HnM2IAAAAJ&hl=en',
   },
   {
     icon: 'linkedin',

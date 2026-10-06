@@ -19,10 +19,10 @@ const publications = [
     venue: 'Findings of EMNLP 2026',
     title:
       'Internalizing Negation-Gated Logical Rules into LLMs for Document-Level Relation Extraction',
-    href: `${publicUrl}/assets/[2026][EMNLP-F][GLINT] Internalizing Negation-Gated Logical Rules into LLMs for Document-Level Relation Extraction.pdf`,
+    href: `${publicUrl}/assets/[2026][EMNLP-F][GLINT].pdf`,
     authors: (
       <>
-        Hye-Yoon Baek, <span className="name-highlight">Sangjun Ji</span>, Jimyeung Seo, Hae-Yoon Koo, Xiongnan Jin and Byungkook Oh*
+        Hye-Yoon Baek, <span className="name-highlight">Sangjun Ji</span>, Jimyeung Seo, Hae-Yoon Koo, Xiongnan Jin and Byungkook Oh<strong>*</strong>
       </>
     ),
     conference: 'Conference on Empirical Methods in Natural Language Processing, 2026',
@@ -38,7 +38,7 @@ const publications = [
     href: 'https://dl.acm.org/doi/10.1145/3770855.3818000',
     authors: (
       <>
-        <span className="name-highlight">Sangjun Ji</span>, Sangjune Kim, Bonyou Koo, Youngho Lee, Xiongnan Jin and Byungkook Oh*
+        <span className="name-highlight">Sangjun Ji</span>, Sangjune Kim, Bonyou Koo, Youngho Lee, Xiongnan Jin and Byungkook Oh<strong>*</strong>
       </>
     ),
     conference: 'ACM SIGKDD Conference on Knowledge Discovery and Data Mining, 2026',
@@ -52,7 +52,7 @@ const publications = [
     title: 'Mention-Context Hypergraph Aggregation for Document-level Relation Extraction',
     authors: (
       <>
-        <span className="name-highlight">Sangjun Ji</span>, Hye-Yoon Baek, Donghyun Lee and Byungkook Oh*
+        <span className="name-highlight">Sangjun Ji</span>, Hye-Yoon Baek, Donghyun Lee and Byungkook Oh<strong>*</strong>
       </>
     ),
     conference: 'Korea Computer Congress, 2026',
@@ -78,7 +78,7 @@ const PublicationsSection = () => {
       <div className="section-heading">
         <h2 className="section-label">Publications</h2>
         <p className="heading-note">
-          <strong>*</strong> Corresponding author
+          <strong>‡</strong> Equal Contribution, <strong>*</strong> Corresponding author
         </p>
       </div>
 

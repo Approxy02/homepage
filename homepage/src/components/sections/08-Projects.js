@@ -4,7 +4,7 @@ const projects = [
   {
     index: '[5]',
     title: 'KU래쪄용: AI-Powered Conflict Mediation Chat App',
-    meta: 'Konkuk University, Mar. 2026 - Present',
+    meta: 'Konkuk University, Mar. 2026 - Dec. 2026',
   },
   {
     index: '[4]',
